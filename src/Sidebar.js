@@ -4,6 +4,9 @@ import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import ChatIcon from '@mui/icons-material/Chat';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Avatar, IconButton } from '@mui/material';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import SidebarChat from './SidebarChat';
+
 
 function Sidebar() {
     return (
@@ -22,6 +25,19 @@ function Sidebar() {
                     </IconButton>
                     
                 </div>
+            </div>
+
+            <div className='sidebar__search'>
+                <div className='sidebar__searchContainer'>
+                    <SearchOutlinedIcon></SearchOutlinedIcon>
+                    <input placeholder='Search or start new chat'></input>
+                </div>
+            </div>
+
+            <div className='sidebar__chats'>
+                <SidebarChat></SidebarChat>
+                <SidebarChat></SidebarChat>
+                <SidebarChat></SidebarChat>
             </div>
         </div>
     );
